@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useEffect, useState} from "react"
 import ReactDOM from "react-dom"
+import ApiTests from "./ApiTests"
 
 import Names from "./Names"
 
@@ -28,7 +29,14 @@ if(Object.keys(appData) < 1) {
     <div className="container-flex">
       <div className="row">
         <div className="col-lg-8 col offset-lg-2">
+          <div className="row">
+            <div className="col mt-3 text-center">
+              <h1>{appData.localization.devAcademy}</h1>
+              <p>{appData.localization.devAcademyExplanation}</p>
+            </div>
+          </div>
           <Names />
+          <ApiTests />
         </div>
       </div>
     </div>

@@ -2,6 +2,7 @@
   "devAcademy": "Dev Academy 2021 Name Application",
   "devAcademyExplanation": "Hello! This is Tuukka Juusela's exercise name application for Solita Dev Academy 2021. On top you can see React frontend implementation of the exercise. Below that UI for testing out API Express.js implementation of the exercise.",
   "frontendImplentation": "Frontend implementation",
+  "backendImplentation": "Backend implementation",
   "taskOneButton": "1. List names and amounts, order by amount, most popular first",
   "taskTwoButton": "2. List names in alphabetical order",
   "taskThreeButton": "3. Return the total amount of all the names",

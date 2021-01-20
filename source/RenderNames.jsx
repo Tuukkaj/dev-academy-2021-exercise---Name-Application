@@ -1,10 +1,11 @@
 import React, {useState} from "react"
 import { useAppContext } from "./App";
-import { TASKS } from "./Names";
+import TASKS from "./constants/tasks"
+import NameSelection from "./NameSelection";
 
 function NameTable({names, loc}) {
   let rows = names.map(name => {
-    return <tr key={name}>
+    return <tr key={name.name}>
       <td>{name.name}</td>
       <td>{name.amount}</td>
     </tr>
@@ -44,15 +45,7 @@ function Task4({names, loc}) {
 
   return <div className="row align-items-center">
       <div className="col">
-        <select value={selected} onChange={e => setSelected(e.target.value)} className="form-control input-focus-glow">
-          {
-            names.map(name => {
-              return <option value={name.name}>
-                  {name.name}
-              </option>
-            })
-          }
-        </select>
+        <NameSelection selected={selected} setSelected={setSelected} />
       </div>
       <div className="col">
           <h3>{loc.amount}: {names.find(name => name.name === selected)?.amount}</h3>
