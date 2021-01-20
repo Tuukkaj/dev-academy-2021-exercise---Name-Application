@@ -1,1 +1,8 @@
-body {background-color: pink}
+body {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.input-focus-glow:focus {
+  border-color: #c82333 !important;
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075), 0 0 8px rgba(200, 35, 51, 0.6) !important;
+}

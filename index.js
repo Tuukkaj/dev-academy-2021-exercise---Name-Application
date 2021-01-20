@@ -1,6 +1,10 @@
 const express = require('express')
 const app = express()
+var cors = require('cors')
+
 const PORT = 3000
+
+app.use(cors())
 
 const useApiController = require("./controllers/apiController")
 useApiController(app)
